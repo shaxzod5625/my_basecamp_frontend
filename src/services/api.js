@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export default () => {
   return axios.create({
-    baseURL: 'http://localhost:3000/api',
+    baseURL: 'https://my-basecamp-backend.herokuapp.com//api',
     headers: {
       "Authorization": localStorage.getItem('token') ? `Bearer ${localStorage.getItem('token')}` : ''
     }
